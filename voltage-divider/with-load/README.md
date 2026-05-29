@@ -1,4 +1,4 @@
-# Voltage Divider Circuit with no load
+# Voltage Divider Circuit with load
 
 ![circuit + waveform](./screenshot.png)
 
