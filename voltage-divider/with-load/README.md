@@ -9,6 +9,16 @@ The equation for output voltage when no load is attached is given by,
 
 $$Vout = Vin.R2/R1+R2$$
 
-However, in this circuit, a load is attached. When a load RL is attached, it causes the effective resistance of the lower arm to change, and as a result the current drawn from the voltage source changes. Hence we dont get the output voltage we expected. So while calculating the resistances, we must keep these things in mind.
+However, when a load is attached, it can draw current from the circuit, causing the output voltage to change. This is called loading effect. To reduce loading effect, and get the desired output voltage, we use a rule of thumb called _10% rule_.
 
-In this circuit, the goal is to step down input voltage of 12 V to output voltage of 3 V. For this, the ratio of resistors must be $Rbottom/R1 = 1/3$. In this example we take $R1 = 3k$ and $Rbottom = 1k$. For Rbottom to be 1k, R2 || RL should be equal to 1k. For simplicity, I have chosen $R2 = 2k$ and $RL = 2k$. Therefore, we get output voltage of 3 V across load resistor RL. 
+In this circuit, we are trying to build a voltage divider that steps down 12 V to 3 V. We have also connected a load, which draws 10 mA. So, by 10% rule, we will assume $I2 = 0.1I_{load}$. 
+
+We can calculate R_{load} using Ohm's Law, and we get $R_{load} = 0.3k$. By 10% rule, $R2 = 10R_{load}$. 
+
+While applying this rule, we call I2 and R2 as bleeding current and bleeding resistance. 
+
+So, since we got I2 and I_{load}, total current = I2 + I_{load}. And then we can calculate R1 by Ohm's Law.
+
+Because this is a rule of thumb, the current and voltage values will be approximate.
+
+A benefit of applying this rule is, we can minimise power wastage through divider (only a small current passes through R2). 
