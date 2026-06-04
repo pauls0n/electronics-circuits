@@ -13,11 +13,11 @@ However, when a load is attached, it can draw current from the circuit, causing 
 
 In this circuit, we are trying to build a voltage divider that steps down 12 V to 3 V. We have also connected a load, which draws 10 mA. So, by 10% rule, we will assume $I2 = 0.1I_{load}$. 
 
-We can calculate R_{load} using Ohm's Law, and we get $R_{load} = 0.3k$. By 10% rule, $R2 = 10R_{load}$. 
+We can calculate $R_{load}$ using Ohm's Law, and we get $R_{load} = 0.3k$. By 10% rule, $R2 = 10R_{load}$. 
 
 While applying this rule, we call I2 and R2 as bleeding current and bleeding resistance. 
 
-So, since we got I2 and I_{load}, total current = I2 + I_{load}. And then we can calculate R1 by Ohm's Law.
+So, since we got I2 and $I_{load}$, total current = I2 + $I_{load}$. And then we can calculate R1 by Ohm's Law.
 
 Because this is a rule of thumb, the current and voltage values will be approximate.
 
