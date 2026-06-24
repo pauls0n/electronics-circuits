@@ -7,4 +7,5 @@ Thevenin's theorem states that any two-terminal bidirectional linear network can
 In this example, we are finding the Thevenin equivalent circuit of a simple voltage divider. We are considering the terminals A and B.
 
 $V_{thev} = V_{in}.R_2 / R_1 + R_2 = 3 V$
+
 $R_{thev} = R1 || R2 = 2.1k$
